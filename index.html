@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Meme of The Day!</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .fa {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+    body{
+        color:rgba(130, 28, 28, 99);
+        background-color:rgb(16, 207, 96);
+    }
+        </style>
+    </head>
+    <body>
+    
+        <h1>Meme of the Day!!!</h1>
+       <h2>Today's Meme is................</h2> 
+       <img  id ="Blah"src="https://i.imgflip.com/4z9x7f.jpg" alt="https://i.imgflip.com/4z9x7f.jpg"><p>Do you like it or not?</p>
+       
+       <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i><br>
+<button id="O">Switch to a different Meme!</button>
+<p>All were made by me.</p>
+<script>
+function myFunction(x) {
+  x.classList.toggle("fa-thumbs-down");
+}
+var img = document.getElementById("Blah");
+var c=document.getElementById("O");
+var ch = function(){
+    var c=document.getElementById("O");
+    img.attr="src","https://imgflip.com/i/4zabv6";
+}
+c.addEventListener("click", ch);
+</script>
+
+    </body>
+</html>
