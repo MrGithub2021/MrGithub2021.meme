@@ -29,17 +29,15 @@
        <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i><br>
 <button id="O">Switch to a different Meme!</button>
 <p>All were made by me.</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+
+</script>
 <script>
-function myFunction(x) {
-  x.classList.toggle("fa-thumbs-down");
+var trig = $("button"); 
+var change = function(){
+  $("img").attr("src","https://i.imgflip.com/4zabv6.jpg");
 }
-var img = document.getElementById("Blah");
-var c=document.getElementById("O");
-var ch = function(){
-    var c=document.getElementById("O");
-    img.attr="src","https://imgflip.com/i/4zabv6";
-}
-c.addEventListener("click", ch);
+trig.on("click", change);
 </script>
 
     </body>
